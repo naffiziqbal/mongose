@@ -12,8 +12,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }));
 
 
-
-// app.get('/api/v1/user', userRoute)
-app.use("/api/v1/user", userRoute)
+app.use("/api/v1/", userRoute)
 
 export default app;

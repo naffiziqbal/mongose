@@ -12,11 +12,6 @@ const userSchema = new Schema<IUser>({
             required: true
         }
     },
-    id: {
-        type: String,
-        required: true,
-        unique: true
-    },
     role: {
         type: String,
         required: true
