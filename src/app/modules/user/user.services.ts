@@ -3,7 +3,7 @@ import { User } from "./user.model"
 
 export const createUserToDB = async() => {
     const user = await new User({
-        id: "Sanandress",
+        id: "54545",
         role: " Mafia",
         password: "98907",
         name: {
