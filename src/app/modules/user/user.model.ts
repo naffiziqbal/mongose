@@ -47,4 +47,6 @@ const userSchema = new Schema<IUser>({
         required: false
     },
 })
+
+// export const User = model<IUser>("user", userSchema)
 export const User = model<IUser>("user", userSchema)

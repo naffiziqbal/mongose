@@ -1,14 +1,14 @@
 import mongoose from "mongoose";
 import app from "./app";
 
-const port = 5000
+const port: number= 5000
 
 //Databse Conenction
 
 async function main() {
 
     try {
-        await mongoose.connect('mongodb://localhost:27017');
+        await mongoose.connect('mongodb://localhost:27017/practice-mongo');
         console.log("Database Connnection Successful");
 
         app.listen(port, () => {
@@ -17,7 +17,7 @@ async function main() {
 
     }
     catch(err){
-        console.log(err)
+        console.log(err.message)
     }
 }
 main()
